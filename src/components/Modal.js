@@ -111,7 +111,7 @@ function Modal(props) {
   return (
     <div className="absolute z-10 bg-white text-black py-5 rounded-lg" >
       <div className='relative'>
-        <div className="font-semibold flex justify-center text-xl" style={{marginBottom: '1.5rem'}}> Recently Generated Reports </div>
+        <div className="font-semibold flex justify-center text-lg py-2" style={{marginBottom: '1.5rem'}}> Recently Generated Reports </div>
         <div className='absolute top-0 flex justify-end w-full px-4 py-2'>
         <div className='mx-3 cursor-pointer rounded-md p-1' style={{border: '2px solid #656564'}}>
           <TbFilter />
@@ -125,7 +125,7 @@ function Modal(props) {
           <thead style={{backgroundColor: '#F4F5F4', color: 'rgb(126,126,127)', padding: '10px'}}>
             <tr>
               {props.columns.map((column, index) => (
-                <th key={index} className="px-4 text-left">{column}</th>
+                <th key={index} className="px-4 py-1 text-left text-sm">{column}</th>
               ))}
             </tr>
           </thead>
@@ -140,7 +140,7 @@ function Modal(props) {
                     {formatTime(row.date)}
                   </div>
                 </td>
-                <td className='px-4 py-3 text-sm' >{row.name}</td>
+                <td className='px-4 py-3 text-sm' style={{verticalAlign: 'top'}}  >{row.name}</td>
                 <td className='px-4 py-3 flex justify-center' >
                 <TbFileDownload onClick={handleDownload} size={27} className='cursor-pointer' />
                 </td>
