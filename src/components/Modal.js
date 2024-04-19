@@ -7,7 +7,7 @@ function Modal(props) {
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageData, setPageData] = useState([]);
-  const rowOptions = [ 4, 5, 10, 12, 15];
+  const rowOptions = [ 4, 5,6,7,8,9, 10];
   const renderPageNumbers = () => {
     const pageNumbers = [];
     for (let i = 1; i <= totalPages; i++) {

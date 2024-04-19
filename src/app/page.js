@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="h-screen w-full flex justify-center items-center">
       {open && (<>
-        <div className="absolute left-0 top-0 bg-white/30 backdrop-blur-md h-screen w-full"></div>
+        <div style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}} className="absolute left-0 top-0  h-screen w-full"></div>
         <Modal columns={columns} data={data} close = {()=> setOpen(false)} />
         </>
       )}
