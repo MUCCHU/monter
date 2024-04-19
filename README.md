@@ -7,6 +7,8 @@ You have to design a dialog box where we can show a list of recently generated R
 - You can use Dummy Data to show the below list .
 - Create a Custom Paginator (Don't use any npm package or Module)
 
+![Alt text](./ss.png)
+
 ## Tech Stack used
 
 - NextJs : frontend framework
