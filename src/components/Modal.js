@@ -113,7 +113,7 @@ function Modal(props) {
       <div className='relative'>
         <div className="font-semibold flex justify-center text-xl" style={{marginBottom: '1.5rem'}}> Recently Generated Reports </div>
         <div className='absolute top-0 flex justify-end w-full px-4 py-2'>
-        <div className='mx-3 cursor-pointer rounded-md p-1' style={{border: '2px solid #656564'}} onClick={()=> props.close()}>
+        <div className='mx-3 cursor-pointer rounded-md p-1' style={{border: '2px solid #656564'}}>
           <TbFilter />
           </div>
           <div className='cursor-pointer rounded-md p-1' style={{border: '2px solid #656564'}} onClick={()=> props.close()}>
