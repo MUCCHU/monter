@@ -31,3 +31,25 @@ body {
     text-wrap: balance;
   }
 }
+.select-container {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.select {
+  width: 100%;
+  padding: 5px;
+  background: white;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  option {
+    background-color: white;
+  }
+  option:checked {
+    background-color: #ddd;
+  }
+}
