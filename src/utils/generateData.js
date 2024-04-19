@@ -31,14 +31,14 @@ function getRandomInt(min, max) {
     return `${randomPattern}${startDateStr}_${endDateStr}.csv`;
   }
   function getRandomDateTime() {
-    var year = Math.floor(Math.random() * (new Date().getFullYear() + 1)); // Random year between 0 and current year
-    var month = Math.floor(Math.random() * 12) + 1; // Random month between 1 and 12
-    var day = Math.floor(Math.random() * 31) + 1; // Random day between 1 and 31 (not considering varying days in each month)
-    var hour = Math.floor(Math.random() * 24); // Random hour between 0 and 23
-    var minute = Math.floor(Math.random() * 60); // Random minute between 0 and 59
+    const startDate = new Date(); 
+    const endDate = new Date();
+    startDate.setMonth(startDate.getMonth() - 1);
+    startDate.setHours(0, 0, 0, 0);
+    const randomDate = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
   
     // Create and return a new Date object with the random components
-    return new Date(year, month - 1, day, hour, minute);
+    return randomDate;
   }
 
 function generateData(length){
